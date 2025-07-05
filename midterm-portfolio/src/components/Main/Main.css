@@ -1,0 +1,148 @@
+
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     text-align: center;
+    background-color: var(--backcolor_red);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.photoWrapper{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.profilePhoto{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border: 4px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(15deg);
+    transition: transform 0.5 ease;
+}
+
+.profilePhoto:hover{
+    transform: perspective(1000px) rotateY(0deg) scale(1.05);
+}
+
+.photoShadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(0,0,0,0.4) 0%,trasparent 70%);
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    filter: blur(5px);
+    opacity: 0.7;
+    transform: perspective(1000px) rotateY(15deg) scale(0.95);
+}
+
+.intro{
+    font-family: 'Roboto';
+    padding-right: 300px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #d8eefc;
+    text-shadow: 
+    1px 1px 1px rgba(0, 0, 0, 0.3),
+    2px 2px 2px #d8eefc,
+    4px 4px 4px #d8eefc;
+}
+
+h1{
+    font-family:'Goblin+One';
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #d8eefc;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    background: linear-gradient(45deg, #ff3366, #d8eefc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+    1px 1px 1px rgba(0, 0, 0, 0.3),
+    2px 2px 2px #d8eefc,
+    4px 4px 4px #d8eefc;
+}
+
+h2{
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    color: #d8eefc;
+}
+
+.description{
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #d8eefc;
+    max-width: 600px;
+}
+
+.description strong{
+    font-size: 600;
+    color: #d8eefc;
+}
+
+.social-icons{
+    display: flex;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.social-icon{
+    color: #d8eefc;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover{
+    transform: translateY(-3px);
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+
+    .intro{
+        padding-right: 190px;
+    }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+
+  .photoWrapper{
+    width: 140px;
+    height: 140px;
+  }
+}

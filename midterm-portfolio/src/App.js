@@ -1,13 +1,9 @@
-import './App.css';
-import Aboutme from './components/Aboutme/Aboutme';
-import Main from './components/Main/Main';
+import Routes_Portfolio from "./routing/Routes_Portfolio";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <Main></Main>
-      <Aboutme></Aboutme>
-      </header>
+        <Routes_Portfolio></Routes_Portfolio>
     </div>
   );
 }
