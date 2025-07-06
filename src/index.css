@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --backcolor_red:#7b3f3f;
+  --color_text:#d8eefc;
+  --accent-color: #ffd700;
+  --text-light: #f5f5f5;
+  --card-bg: #1a1a1a;
+  --profile-size: 240px;    
+  --border-size: 8px;        
+  --gradient-start: #7b3f3f;
+  --gradient-end:   #ffd700;
+}

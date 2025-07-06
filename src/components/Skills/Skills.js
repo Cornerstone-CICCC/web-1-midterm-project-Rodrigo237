@@ -5,6 +5,9 @@ const Skills = () => {
   return (
     <div className='background_skills'>
         <h1>Skills</h1>
+        <p className="skills_note">
+          Technologies listed here have been applied to real-world projects with measurable results. 👨‍💻✨
+        </p>
         <section className="skills_section">
         <div className="skill_item">
           <h3>📱 Native Android</h3>
@@ -26,28 +29,24 @@ const Skills = () => {
           <p>Created mobile app designs from scratch based on client specs. Enhanced UX for 4+ apps. I improvement of user experience and make a more user friendly design</p>
         </div>
       </section>
-      <p className="skills_note">
-          Technologies listed here have been applied to real-world projects with measurable results. 👨‍💻✨
-        </p>
       <section className='technologies_section'>
         <h2>Technologies</h2>
           <p>I have used several technologies for the development of different applications, but here I only show the most relevant ones I know how to use.</p>
           <div className='techno_grid'>
             <div className='techno_box'>
-              <img src=''></img>
+              <a href="https://www.facebook.com/rodri.moreno.7/" class="techno-icon"><i class="fab fa-android"></i></a>
               <h3>Android</h3>
             </div>
-            
             <div className='techno_box'>
-              <img src=''></img>
+              <a href="https://www.facebook.com/rodri.moreno.7/" class="techno-icon"><i class="fab fa-github"></i></a>
               <h3>Github</h3>
             </div>
             <div className='techno_box'>
-              <img src=''></img>
+              <a href="https://www.facebook.com/rodri.moreno.7/" class="techno-icon"><i class="fas fa-database"></i></a>
               <h3>MySQL</h3>
             </div>
             <div className='techno_box'>
-              <img src=''></img>
+              <a href="https://www.facebook.com/rodri.moreno.7/" class="techno-icon"><i class="fab fa-react"></i></a>
               <h3>React</h3>
             </div>
           </div>
