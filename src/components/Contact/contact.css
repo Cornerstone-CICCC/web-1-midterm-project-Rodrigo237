@@ -16,7 +16,7 @@ body{
 }
 
 .contact_section p{
-    color: #d8eefc;
+    color: var(--color_text);
     font-size: 18px;
     margin-bottom: 40px;
 }
@@ -27,7 +27,7 @@ body{
 }
 
 .contact_form{
-    background-color: #d8eefc;
+    background-color: var(--color_text);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rbga(0,0,0,0.2);
@@ -46,7 +46,7 @@ body{
 
 .contact_form button{
     background-color: #7b3f3f;
-    color: #d8eefc;
+    color: var(--color_text);
     border: none;
     padding: 12px 24px;
     font-size: 16px;
