@@ -57,28 +57,28 @@
     padding-right: 300px;
     font-size: 1.2rem;
     font-weight: 300;
-    color: #d8eefc;
+    color: var(--color_text);
     text-shadow: 
     1px 1px 1px rgba(0, 0, 0, 0.3),
-    2px 2px 2px #d8eefc,
-    4px 4px 4px #d8eefc;
+    2px 2px 2px var(--color_text),
+    4px 4px 4px var(--color_text);
 }
 
 h1{
     font-family:'Goblin+One';
     font-size: 3.5rem;
     font-weight: 700;
-    color: #d8eefc;
+    color: var(--color_text);
     margin-bottom: 1rem;
     line-height: 1.2;
-    background: linear-gradient(45deg, #ff3366, #d8eefc);
+    background: linear-gradient(45deg, #ff3366, var(--color_text));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 
     1px 1px 1px rgba(0, 0, 0, 0.3),
-    2px 2px 2px #d8eefc,
-    4px 4px 4px #d8eefc;
+    2px 2px 2px var(--color_text),
+    4px 4px 4px var(--color_text);
 }
 
 h2{
@@ -88,7 +88,7 @@ h2{
     margin-bottom: 2rem;
     position: relative;
     display: inline-block;
-    color: #d8eefc;
+    color: var(--color_text);
 }
 
 .description{
@@ -96,13 +96,13 @@ h2{
     font-style: italic;
     font-size: 1.1rem;
     font-weight: 300;
-    color: #d8eefc;
+    color: var(--color_text);
     max-width: 600px;
 }
 
 .description strong{
     font-size: 600;
-    color: #d8eefc;
+    color: var(--color_text);
 }
 
 .social-icons{
@@ -112,7 +112,7 @@ h2{
 }
 
 .social-icon{
-    color: #d8eefc;
+    color: var(--color_text);
     font-size: 24px;
     transition: all 0.3s ease;
 }
