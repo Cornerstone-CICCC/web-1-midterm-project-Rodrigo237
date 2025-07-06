@@ -12,7 +12,7 @@ footer{
 
 .copyright{
     font-size: 14px;
-    color: #d8eefc;
+    color: var(--color_text);
 }
 
 .copyright span{
@@ -28,7 +28,7 @@ footer{
 .links h3{
     font-size: 16px;
     margin-bottom: 15px;
-    color: #d8eefc;
+    color: var(var(--color_text));
 }
 
 .links ul{
@@ -43,7 +43,7 @@ footer{
 
 .links a{
     text-decoration: none;
-    color: #d8eefc;
+    color: var(var(--color_text));
     font-size: 14px;
     transition: color 0.2s;
 }
