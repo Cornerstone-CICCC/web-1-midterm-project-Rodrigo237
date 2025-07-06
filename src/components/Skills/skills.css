@@ -41,18 +41,19 @@
     padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
-    color:#d8eefc;
+    color:var(--color_text);
 }
 
 .skills_section h2{
     font-size: 32px;
-    color: #d8eefc;
+    margin-bottom: 40px;
+    color: var(--color_text);
     text-align: center;
 }
 
 .skill_item{
     background-color: var(--backcolor_red);
-    border: 6px solid #d8eefc;
+    border: 6px solid var(--color_text);
     margin-bottom: 30px;
     padding: 20px 25px;
     box-shadow: 0 4px 12px rbga(0,0,0,0.1);
@@ -61,7 +62,7 @@
 .skill_item h3{
     font-size: 20px;
     margin-bottom: 10px;
-    color: #d8eefc;
+    color: var(--color_text);
 }
 
 .skill_item p{
@@ -105,6 +106,7 @@
     font-size: 1.1rem;
     color: var(--color_text);
 }
+
 
 .techno_grid{
     display: grid;
@@ -152,4 +154,3 @@
     letter-spacing: 1px;
     text-shadow: var(--accent-color);
 }
-
