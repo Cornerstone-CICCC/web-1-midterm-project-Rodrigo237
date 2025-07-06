@@ -50,6 +50,7 @@
     font-size: 1.1rem;
     color: var(--color_text);
     padding-bottom: 40px;
+
 }
 
 .contact_section .highlight{
@@ -58,7 +59,7 @@
 }
 
 .contact_form{
-    background-color: #d8eefc;
+    background-color: var(--color_text);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rbga(0,0,0,0.2);
@@ -78,7 +79,7 @@
 
 .contact_form button{
     background-color: #7b3f3f;
-    color: #d8eefc;
+    color: var(--color_text);
     border: none;
     padding: 12px 24px;
     font-size: 16px;

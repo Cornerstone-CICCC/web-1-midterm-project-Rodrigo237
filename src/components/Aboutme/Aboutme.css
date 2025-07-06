@@ -1,0 +1,125 @@
+.container_aboutme {
+  display:flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  font-family: 'Roboto';
+  background-color: var(--backcolor_red);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  color: var(--color_text);
+}
+
+.description_aboutme {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color_text);
+  max-width: 600px;
+}
+
+.description p {
+  margin-bottom: 1rem;
+}
+
+.school-list{
+  padding: 40px 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.arrowPhoto{
+max-width: 300px;  
+max-width: 600px;
+clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.school{
+  font-family: 'Roboto';
+  font-size: 24px;
+  background-color: #5a2e2e;
+  border-radius: 30px;
+  width: 100%;
+  margin: 15px 0;
+  padding: 18px;
+  color: var(--color_text);
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.school:hover{
+    animation: pulse 0.6s ease;
+}
+
+.container_school{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     max-width: 1200px;
+     gap: 40px;
+     padding: 40px;
+     font-family: 'Roboto';
+     background-color: var(--backcolor_red);
+}
+
+.school_description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    font-family: 'Roboto';
+    color: var(--color_text);
+    font-size: 20px;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+.school_description p{
+    flex: 2;
+    font-size: 20px;
+    color: var(--color_text);
+    line-height: 1.6;
+}
+
+.descriptionPhoto{
+    flex: 1;
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .description_aboutme {
+    font-size: 1rem;
+  }
+}
