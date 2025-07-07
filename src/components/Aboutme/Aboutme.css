@@ -87,7 +87,7 @@ clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   width: 100%;
   margin: 15px 0;
   padding: 18px;
-  color: #d8eefc;
+  color: var(--color_text);
   text-align: center;
   font-size: 16px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -105,7 +105,7 @@ clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
     width: 1200px;
     gap: 30px;
     font-family: 'Roboto';
-    color: #d8eefc;
+    color: var(--color_text);
     font-size: 20px;
     padding: 40px;
     margin-top: 20px;
@@ -115,7 +115,7 @@ clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 .school_description p{
     max-width: 600px;
     font-size: 20px;
-    color: #d8eefc;
+    color: var(--color_text);
     line-height: 1.6;
 }
 
