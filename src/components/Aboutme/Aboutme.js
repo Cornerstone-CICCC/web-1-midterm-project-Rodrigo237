@@ -4,7 +4,7 @@ import './Aboutme.css'
 const Aboutme = () => {
 
   return (
-    <div className='background'>
+    <div className='background_aboutme'>
       <div className='container_aboutme'>
       <img src="../images/profile_photo.jpg" className='arrowPhoto'></img>
       <div className='textContent'>
@@ -25,15 +25,14 @@ const Aboutme = () => {
         <span>DIGITAL MARKETING CERTIFICATE | Tamwood Careers, Vancouver, Canada</span>
       </div>
     </div>
-    <div className='container_school'>
-      <div className='school_description'>
+    <div className='school_description'>
         <p>
           I’m a software developer from Mexico City, Im passionate about development of applications, specific for android mobile, I was focusing in that over 4 years. Also I had many experiences in another field in  the development field like web development or web design. My most recent role at Burst Creative in Vancouver allowed me to work on scalable, cloud-integrated applications using React, where I led efforts in API integration and technical documentation. Before that, as a Android Developer at Acepte Solutions, I was responsible for full-cycle mobile development, including the successful deployment of multiple apps to both the App Store and Google Play.
           In my free time, I’m usually doing workout, playing video games, or hanging out with my friends, I like to keep active and try to use my time in the best way possible. In addiction, I like to discover new things for that reason I enjoy trip to discover new places 
         </p>
-        <img src="../images/profile_photo.jpg" className='descriptionPhoto'></img>
+        <img src="../images/Vancouver.jpg" className='descriptionPhoto'></img>
       </div>
-    </div>
+    
   </div> 
   )
 }
