@@ -7,7 +7,22 @@ footer{
     gap: 40px;
     border-top: 2px dashed white;
     width: 100vw;
-    background-color: var(--backcolor_red);
+    background: linear-gradient(-45deg, #1e1e1e, #7b3f3f, #2b2b2b);
+    background-size: 600% 600%;
+    animation: 
+    gradientFlow 15s ease infinite,
+    glowFilter 6s ease-in-out infinite;
+  padding: 20px 0;
+}
+
+@keyframes gradientFlow {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+@keyframes glowFilter {
+  0%, 100% { filter: brightness(1) hue-rotate(0deg); }
+   50%     { filter: brightness(1.1) hue-rotate(8deg); }
 }
 
 .copyright{
@@ -28,7 +43,7 @@ footer{
 .links h3{
     font-size: 16px;
     margin-bottom: 15px;
-    color: #d8eefc;
+    color: var(--accent-color);
 }
 
 .links ul{
@@ -43,7 +58,7 @@ footer{
 
 .links a{
     text-decoration: none;
-    color: #d8eefc;
+    color: var(--color_text);
     font-size: 14px;
     transition: color 0.2s;
 }
