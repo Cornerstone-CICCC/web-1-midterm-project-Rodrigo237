@@ -1,27 +1,54 @@
+.background_aboutme{
+  background: linear-gradient(-45deg, #1e1e1e, #7b3f3f, #2b2b2b);
+  background-size: 600% 600%;
+  animation: 
+    gradientFlow 15s ease infinite,
+    glowFilter 6s ease-in-out infinite;
+  padding: 20px 0;
+}
+
 .container_aboutme {
   display:flex;
   align-items: flex-start;
   max-width: 1200px;
+  gap: 40px;
   margin: 0 auto;
   padding: 2rem;
   position: relative;
   font-family: 'Roboto';
-  background-color: var(--backcolor_red);
+}
+
+@keyframes gradientFlow {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+@keyframes glowFilter {
+  0%, 100% { filter: brightness(1) hue-rotate(0deg); }
+   50%     { filter: brightness(1.1) hue-rotate(8deg); }
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-  color: #d8eefc;
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    color: var(--color_text);
+    text-shadow: 
+    1px 1px 1px rgba(0, 0, 0, 0.3),
+    2px 2px 2px var(--card-bg),
+    4px 4px 4px var(--card-bg);
 }
 
 .description_aboutme {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #d8eefc;
-  max-width: 600px;
+  font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--color_text);
+    max-width: 600px;
 }
 
 .description p {
@@ -37,7 +64,7 @@
 
 .arrowPhoto{
 max-width: 300px;  
-max-width: 600px;
+max-width: 300px;
 clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
@@ -56,7 +83,6 @@ clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 .school{
   font-family: 'Roboto';
   font-size: 24px;
-  background-color: #5a2e2e;
   border-radius: 30px;
   width: 100%;
   margin: 15px 0;
@@ -72,42 +98,30 @@ clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
     animation: pulse 0.6s ease;
 }
 
-.container_school{
-     display:flex;
-     align-items: center;
-     justify-content: center;
-     max-width: 1200px;
-     gap: 40px;
-     padding: 40px;
-     font-family: 'Roboto';
-     background-color: var(--backcolor_red);
-}
-
 .school_description{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    width: 1200px;
     gap: 30px;
-    max-width: 1200px;
-    width: 100%;
     font-family: 'Roboto';
     color: #d8eefc;
     font-size: 20px;
-    padding: 18px;
+    padding: 40px;
     margin-top: 20px;
+    margin: 0 auto;
 }
 
 .school_description p{
-    flex: 2;
+    max-width: 600px;
     font-size: 20px;
     color: #d8eefc;
     line-height: 1.6;
 }
 
 .descriptionPhoto{
-    flex: 1;
     width: 300px;
-    height: auto;
+    height: 400px;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -115,8 +129,17 @@ clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .container_aboutme{
+    max-width: 600px;
+  }
+
   .title {
     font-size: 2rem;
+  }
+
+  .school_description{
+    width: 700px;
   }
   
   .description_aboutme {
