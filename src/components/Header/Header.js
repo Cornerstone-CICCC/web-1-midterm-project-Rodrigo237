@@ -32,7 +32,7 @@ export const Header = () => {
               <button className="nav-button"><NavLink to="/contact">Contact</NavLink></button>
           </nav>
       </header>
-      <div style={{height: '72px'}}></div> {/* Espaciador SIEMPRE visible */}
+      <div style={{height: '72px'}}></div> 
     </>
   )
 }
